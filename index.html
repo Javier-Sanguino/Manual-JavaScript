@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/JavaScript_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1 class="text-center p-3 display-1">Manual básico de uso de JavaScript</h1>
+    <div class="definicion content-fluid px-3">
+        <h3>What's up?</h3>
+        <p class="px-3"><strong>JavaScript</strong> (abreviado comúnmente JS) es un lenguaje de programación
+            interpretado, dialecto del
+            estándar
+            ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y
+            dinámico.</p>
+    </div>
+    <section class="content-fluid p-2">
+        <h3>Insercion de JavaScript</h3>
+        <p>Todo el código debe ir escrito dentro de las etiquetas: <span
+                class="text-danger">&lt;script&gt;&lt;/script&gt;</span></p>
+        <p>Hay 3 formas de agregar código <strong>JavaScript:</strong></p>
+        <ul>
+            <li>&lt;head&gt;: En el Head del documento. Se llamara con el evento de agun botón</li>
+            <li>&lt;body&gt;: En el final del body. La colocación de scripts en la parte inferior del elemento
+
+                &lt;body&gt; mejora la velocidad de visualización, porque la interpretación del script ralentiza la
+                visualización.
+            </li>
+            <li>Archivos externos: Los scripts externos son prácticos cuando se usa el mismo código en muchas páginas
+                web diferentes.
+
+                Los archivos JavaScript tienen la extensión de archivo <strong>.js</strong> .
+
+                Para utilizar una secuencia de comandos externa, coloque el nombre del archivo en el atributo src
+                (fuente) de una etiqueta
+                &lt;script&gt;.
+                <figure class="col-sm-6 mx-auto pt-2">
+                    <img src="./img/shots/script_link.png" class="img-fluid" alt="">
+                </figure>
+                Enlazar código JavaScript en archios externos trae algunas ventajas:
+                <ul>
+                    <li>Separa HTML y código</li>
+                    <li>Hace que HTML y JavaScript sean más fáciles de leer y mantener</li>
+                    <li>Los archivos JavaScript almacenados en caché pueden acelerar la carga de la página</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Se pueden insertar todas las &lt;script&gt; que se deseen, es decir que se pueden enlazar multiples archivos
+            JavaScript</p>
+    </section>
+    <section class="output p-3">
+        <h3>Salidas de datos</h3>
+        <ul>
+            <li>Escribiendo en un elemento HTML, usando <span class="text-danger">innerHTML</span>.</li>
+            <li>Escribir en la salida HTML usando <span class="text-danger">document.write()</span>.</li>
+            <li>Escribiendo en un cuadro de alerta, usando <span class="text-danger">window.alert()</span>.</li>
+            <li>Escribiendo en la consola del navegador, <span class="text-danger">usando console.log()</span>.</li>
+        </ul>
+
+        <div>
+            <h5>Usando <span class="text-danger">innerHTML</span></h5>
+            <p>Para acceder a un elemento HTML, JavaScript puede usar el método <span
+                    class="text-danger">document.getElementById(id)</span>.</p>
+            <p>El atributo <i>id</i> define el elemento HTML. La propiedad innerHTML define el contenido HTML:</p>
+            <div class="demo col-sm-8 mx-auto bg-light p-2">
+                <p>Esto es una prueba en JavaScript.</p>
+                <hr>
+                <p id="demo-inner">JavaScript puede cambiar HTML</p>
+                <button type="button" class="btn btn-success"
+                    onclick='document.getElementById("demo-inner").innerHTML = "Hello JavaScript!"'>Click
+                    Me!</button>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
