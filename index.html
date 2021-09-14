@@ -63,24 +63,60 @@
             <li>Escribiendo en un cuadro de alerta, usando <span class="text-danger">window.alert()</span>.</li>
             <li>Escribiendo en la consola del navegador, <span class="text-danger">usando console.log()</span>.</li>
         </ul>
-
-        <div>
-            <h5>Usando <span class="text-danger">innerHTML</span></h5>
-            <p>Para acceder a un elemento HTML, JavaScript puede usar el método <span
-                    class="text-danger">document.getElementById(id)</span>.</p>
-            <p>El atributo <i>id</i> define el elemento HTML. La propiedad innerHTML define el contenido HTML:</p>
-            <div class="demo col-sm-8 mx-auto bg-light p-2">
-                <p>Esto es una prueba en JavaScript.</p>
-                <hr>
-                <p id="demo-inner">JavaScript puede cambiar HTML</p>
-                <button type="button" class="btn btn-success"
-                    onclick='document.getElementById("demo-inner").innerHTML = "Hello JavaScript!"'>Click
-                    Me!</button>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <ul>
+            <li>
+                <div>
+                    <h5>Usando <span class="text-danger">innerHTML</span></h5>
+                    <p>Para acceder a un elemento HTML, JavaScript puede usar el método <span
+                            class="text-danger">document.getElementById(id)</span>.</p>
+                    <p>El atributo <i>id</i> define el elemento HTML. La propiedad innerHTML define el contenido HTML:
+                    </p>
+                    <div class="demo col-sm-8 mx-auto bg-light p-2">
+                        <p>Esto es una prueba en JavaScript.</p>
+                        <hr>
+                        <p id="demo-inner">JavaScript puede cambiar HTML</p>
+                        <button type="button" class="btn btn-success"
+                            onclick='document.getElementById("demo-inner").innerHTML = "Hello JavaScript!"'>Click
+                            Me!</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="my-3">
+                    <h5>Usando <span class="text-danger">document.write().</span></h5>
+                    <p>Para fines de prueba, es conveniente utilizar <span class="text-danger">document.write()</span>.
+                    </p>
+                    <p>El uso de document.write () después de cargar un documento HTML, <strong>eliminará todo el HTML
+                            existente</strong>.</p>
+                    <div class="demo demo2 col-sm-8 mx-auto bg-light">
+                        <iframe src="./demo.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h5>Usando <span class="text-danger">Window.alert ().</span></h5>
+                    <p>Es la forma más comun para mostrar un mensaje. Con el método <span
+                            class="text-danger">document.getElementById(id)</span>.</p>
+                    <p>El atributo <i>id</i> define el elemento HTML. La propiedad innerHTML define el contenido HTML:
+                    </p>
+                    <div class="demo col-sm-8 mx-auto bg-light p-2">
+                        <p>Esto es una prueba en JavaScript.</p>
+                        <hr>
+                        <p id="demo-inner">JavaScript puede cambiar HTML</p>
+                        <button type="button" class="btn btn-success"
+                            onclick='document.getElementById("demo-inner").innerHTML = "Hello JavaScript!"'>Click
+                            Me!</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
     </section>
 </body>
 
